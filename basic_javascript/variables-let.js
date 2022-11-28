@@ -28,7 +28,7 @@ teste = 'Valor novo'; // Altera valor da variável
  * Isso pararia o código na linha do erro
  * 2)Não se pode criar variáveis com palavras reservadas
  * ex: let if;
- * 3) É recomendado que variáveis ter nomes significativos
+ * 3) É recomendado que variáveis tenham nomes significativos
  * 4) Não se pode começar o nome de uma variável com número
  * ex: let 1nome;
  * E, iniciar, preferencialmente, com letra minúscula
