@@ -23,20 +23,20 @@
  * ex: nomeCliente != nomecliente
  * 8) É recomendado utilizar CONST  e não VAR para constantes
  */
-const nome = "João";
 const primeiroNumero = 5;
 const segundoNumero = 10;
 const resultado = primeiroNumero + segundoNumero;
 
-/** O Javascript e uma linguagem de tipagem dinâmica
+/** 
+ * O Javascript e uma linguagem de tipagem dinâmica
  * Isso significa que seu motor consegue atribuir o tipo conforme valor preenchido
  * E para descobrí-lo, é possível utilizar o método typeof()
  */
-console.log(typeof nome)
 console.log(typeof resultado)
 console.log(typeof ('5' + segundoNumero))
 
-/** O sinal + tem duas funções no Javascript:
+/** 
+ * O sinal + tem duas funções no Javascript:
  * Somar informações (quando number)
  * Concatenar informações (quando string)
  * OBS: Mesmo que apenas um dos valores envolvidos for string,
@@ -44,3 +44,24 @@ console.log(typeof ('5' + segundoNumero))
  */
 console.log(resultado);
 console.log('5' + segundoNumero);
+
+// Exercício
+const nome = 'Jeanne';
+const sobrenome = 'Lima';
+const idade = 24;
+const peso = 55;
+const alturaEmM = 1.65;
+let indiceMassaCorporal; // peso / (altura * altura)
+let anoNascimento;
+
+indiceMassaCorporal = peso / (alturaEmM * alturaEmM);
+anoNascimento = new Date().getFullYear() - idade;
+
+/**
+ * Template literals (Template strings)
+ * Permite concatenar informações envolvendo todo o conteúdo com `
+ * E as variáveis com  ${}
+ */
+console.log(`${nome} ${sobrenome} nasceu em ${anoNascimento}, tem ${idade} anos, pesa ${peso}kg,
+tem ${alturaEmM}m de altura e seu IMC é de ${indiceMassaCorporal}
+`)
