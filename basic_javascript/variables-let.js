@@ -4,12 +4,25 @@
  * Em tempo de execução do código
  */
 
+/**
+ * É possível criar variáveis sem especificar se é LET ou VAR,
+ * mas isso é uma péssima prática enão deve ser feito
+ */
+exemplo = "Declaração a ser evitada";
+
 // let é a forma mais moderna de criar variáveis
 let nome = 'Henrique'; // Declaração e inicialização da variável
 
 // var é a forma mais antiga de criar variáveis
 var ano = 1984;
+var ano = 2016;
 
+/**
+ * DIFERENÇAS ENTRE VAR E LET:
+ * 1) VAR permite a redeclaração de variáveis, LET não deixa e notifica o erro 
+ * (corrigido no ECMASCRIPT 2015 (ES6), 
+ * uma padronização do Javascript criada pela empresa ECMA International)
+ */
 console.log(nome, 'nasceu em', ano)
 
 /**
