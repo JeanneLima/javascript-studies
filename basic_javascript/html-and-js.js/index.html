@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha página HTML</title>
+
+  <!-- 
+    Inserir tag script no head do HTML é uma má prática
+    Visto que pode retardar o carregamento da página
+    Deixando tela branca até o script ser carregado
+    E causando uma pior experiência para o usuário
+   -->
+  <script>
+    // Comentário de linha única
+    console.log('Olá, mundo!')
+  </script>
+</head>
+<body>
+  
+  <!-- 
+    No caso de Javascript dentro do arquivo HTML
+    A melhor prática é colocar o script no final do arquivo
+   -->
+  <script>
+    // Comentário de linha única
+    console.log('Este trecho será exibido no console do navegador.')
+  </script>
+
+  <!-- 
+    Porém a melhor prática é separar HTML e Javascript em diferentes arquivos 
+    E importar os scripts no HTML
+  -->
+  <script src="index.js"></script>
+</body>
+</html>
