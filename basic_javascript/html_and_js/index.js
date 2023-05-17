@@ -28,3 +28,22 @@ digitNumOne = Number(digitNumOne);
 digitNumTwo = Number(digitNumTwo);
 
 alert(`O resultado da sua conta foi: ${digitNumOne + digitNumTwo}`)
+
+/**
+ * É possível adicionar conteúdo direto no DOM através de métodos como:
+ * window.document.write()
+ */
+document.write('Teste do método write()');
+
+/**
+ * E com o método do DOM innerHTML() retornar o valor que está no elemento desejado
+ * Além de conseguir substituir seu conteúdo
+ * Ou incrementar
+ * Conseiderando tags HTML
+ */
+
+console.log('Conteúdo do body do DOM:', document.body.innerHTML)
+
+document.body.innerHTML = 'Qualquer outra coisa';
+
+document.body.innerHTML += '<br/>Conteúdo dois';
