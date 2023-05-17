@@ -15,3 +15,16 @@ console.log('shouldConfirm: ', shouldConfirm)
 const myName = prompt('Digite seu nome:'); // window.prompt('Mensagem')
 
 console.log('myName: ', myName)
+
+/**
+ * Template literals permitem que coloquemos, além de variáveis, expressões
+ * Mas é uma boa prática deixar o código mais explícito para facilitar a manutenção
+ */
+
+let digitNumOne = prompt('Digite um número:');
+let digitNumTwo = prompt('Digite outro número:');
+
+digitNumOne = Number(digitNumOne);
+digitNumTwo = Number(digitNumTwo);
+
+alert(`O resultado da sua conta foi: ${digitNumOne + digitNumTwo}`)
