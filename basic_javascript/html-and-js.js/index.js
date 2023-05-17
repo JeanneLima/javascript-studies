@@ -1,1 +1,0 @@
-console.log('Trecho de código importado.')

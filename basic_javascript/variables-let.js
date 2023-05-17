@@ -65,3 +65,31 @@ let sobrenome = "Manhães";
 sobrenome = "Silva";
 
 console.log(sobrenome)
+
+/**
+ * Exercício
+ * Aponta varA para o valor de B
+ * Aponta varB para o valor de C
+ * Aponta varC para o valor de A
+ */
+
+
+let varA = "A";
+let varB = "B";
+let varC = "C";
+
+console.log("valores originais: ", varA, varB, varC);
+
+const varATemp = varB;
+const varBTemp = varC;
+const varCTemp = varA;
+
+// varA = varATemp;
+// varB = varBTemp;
+// varC = varCTemp;
+
+// console.log("valores reapontados de maneira simples: ", varA, varB, varC);
+
+[varA, varB, varC] = [varB, varC, varA];
+
+console.log("valores reapontados de maneira rebuscada e mais nova: ", varA, varB, varC);
